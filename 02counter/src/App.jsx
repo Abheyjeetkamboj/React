@@ -6,15 +6,22 @@ import './App.css'
 
 function App() {
 let[counter,setcounter] = useState(5);
+
+
+
 const addvalue = ()=>{
+  if(counter<20){
   counter=counter+1;
   setcounter(counter)
   console.log("clicked "+counter)
+  }
 }
 const removed = ()=>{
+  if(counter>0){
   counter=counter-1;
   setcounter(counter)
   console.log("clicked "+counter)
+}
 }
   return (
     <>
