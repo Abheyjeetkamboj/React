@@ -11,8 +11,11 @@ let[counter,setcounter] = useState(5);
 
 const addvalue = ()=>{
   if(counter<20){
-  counter=counter+1;
-  setcounter(counter)
+  // counter=counter+1;
+  
+  setcounter(counter=>counter+1)
+  // setcounter(counter=>counter+1)
+  // setcounter(counter=>counter+1)
   console.log("clicked "+counter)
   }
 }
